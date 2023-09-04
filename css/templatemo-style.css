@@ -97,7 +97,7 @@ p {
 }
 
 .navbar-nav>li>a {
-	color: #fff!important;
+	color: rgb(0, 0, 0)!important;
 	font-size: 13px;
 	font-weight: 300;
 	text-transform: uppercase;
@@ -105,6 +105,14 @@ p {
 	line-height: 80px;
 	padding: 0px;
 	letter-spacing: 0.5px;
+}
+
+.nav_color_black>li>a {
+	color: rgb(0, 0, 0)!important;
+}
+
+.nav_color_white>li>a {
+	color: rgb(255, 255, 255)!important;
 }
 
 .navbar-nav>li {
@@ -605,7 +613,7 @@ p {
 	}
 }
 
-#portfolio .sub_title, #about .sub_title, #testimonial .sub_title, #line_contact .sub_title{
+#portfolio .sub_title, #about .sub_title, #testimonial .sub_title, #line_contact .sub_title, #goal .sub_title {
 	color: #00366b;
 	font-size: 32px;
 	text-align: center;
@@ -1060,7 +1068,7 @@ footer .connect-us ul li a:hover {
 
 }
 
-/******** team.html ********/
+/******** team.html 關於會議 ********/
 
 #team_home {
 	width: 100%;
@@ -1079,7 +1087,7 @@ footer .connect-us ul li a:hover {
 }
 
 #goal {
-	margin: 100px;
+	margin: 100px 50px 50px 50px;
 	text-align: center;
 }
 
@@ -1095,8 +1103,329 @@ footer .connect-us ul li a:hover {
     float: left;
 }
 
-#goal .goal_dec p{
+#goal .goal_wrap {
+	margin: 0px 10px;
+}
+
+#goal .goal_wrap .goal_dec p{
 	font-size: 16px;
 	padding: 30px;
 	line-height: 25px;
+}
+
+#goal .row{
+	padding-top: 50px 0;
+}
+
+#goal .seperator{
+	height: 1px;
+	background:rgb(66, 131, 178);
+	border:none;
+	display: block;
+	margin: 0px 300px;
+}
+#goal .title{
+	text-align: center;
+}
+
+#goal .item {
+	position: relative;
+	margin: 100px 0px 30px 0px;
+	min-height: 1px;
+	float: left;
+	-webkit-backface-visibility: hidden;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+	
+#goal .item-in {
+	background: #fff;
+	padding: 40px 40px;
+	position: relative;
+}
+
+#goal .item-in p {
+	background: #fff;
+	padding: 40px 40px 0px 40px;
+	position: relative;
+	text-align: center;
+}
+
+#goal .item-in img {
+	margin: 10px;
+}
+
+#goal .item-in:hover:before {
+	width: 100%;
+}
+	 
+#goal .item-in::before {
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	height: 2px;
+	width: 0%;
+	background: #333333;
+	right: 0px;
+	-webkit-transition: width 0.4s;
+	transition: width 0.4s;
+}
+
+/******** committee.html 關於委員會 ********/
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+#committee {
+	font-size: 13px;
+	width: 100%;
+	padding: 50px;
+	margin: 100px 0px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	background: hsl(0, 0%, 95%);
+}
+#committee .fw-5 {
+	font-weight: 500;
+}
+
+#committee .fw-7 {
+	font-weight: 700;
+}
+
+#committee .sub_title {
+	color: #00366b;
+	font-size: 32px;
+	text-align: center;
+	padding-bottom: 10px;
+	margin: 30px;
+}
+
+#committee .committee_wrap {
+	width: 800px;
+	box-sizing: border-box;
+	border-radius: 8px;
+	background: white;
+	box-shadow: 0px 0px 14px #80808047;
+}
+
+#committee .card {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	padding: 30px;
+}
+
+#committee .card .card-left {
+	width: 40%;
+}
+
+#committee .card .card-left .card-img {
+	width: 100%;
+	height: 310px;
+	position: relative;
+}
+
+#committee .card .card-left .card_item_1::before {
+	content: "";
+	background: url(../img/committee_1.jpg);
+	width: 100%;
+	height: 300px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	border-radius: 8px;
+}
+
+#committee .card .card-left .card_item_2::before {
+	content: "";
+	background: url(../img/committee_2.jpg);
+	width: 100%;
+	height: 300px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	border-radius: 8px;
+}
+
+#committee .card .card-left .card_item_3::before {
+	content: "";
+	background: url(../img/committee_3.jpg);
+	width: 100%;
+	height: 300px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	border-radius: 8px;
+}
+
+#committee .card .card-left .card_item_4::before {
+	content: "";
+	background: url(../img/committee_4.jpg);
+	width: 100%;
+	height: 300px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	border-radius: 8px;
+}
+
+#committee .card .card-left .card_item_5::before {
+	content: "";
+	background: url(../img/committee_5.jpg);
+	width: 100%;
+	height: 300px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	border-radius: 8px;
+}
+
+#committee .card .card-left .card-img img {
+	width: 100%;
+}
+
+#committee .card .card-right {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	padding: 0px 0px 30px 30px;
+	box-sizing: border-box;
+}
+
+#committee .card .card-right .card-title {
+	font-size: 20px;
+	color: hsl(214, 17%, 51%);
+}
+
+#committee .card .card-right .card-text {
+	font-size: 14px;
+	color: hsl(212, 23%, 69%);
+	margin-top: 20px;
+}
+
+#committee .card .card-right .card-right-body {
+	display: flex;
+	margin-top: 26px;
+}
+
+@media screen and (max-width: 850px) {
+	#committee {
+		height: 100%;
+		margin: 70px auto;
+	}
+	#committee .committee_wrap {
+		width: 86%;
+	}
+	#committee .card {
+		flex-direction: column;
+	}
+	#committee .card .card-left {
+		width: 100%;
+	}
+	#committee .card .card-right {
+		width: 100%;
+		padding: 40px 25px 20px;
+	}
+	#committee .card .card-left .card-img {
+		height: 210px;
+	}
+	#committee .card .card-left .card-img::before {
+		border-radius: 8px 8px 0px 0px;
+	}
+}
+
+/******** sign_up.html 報名與文件下載 ********/
+
+#signUp {
+	width: 100%;
+  	padding-top: 28vh;
+  	text-align: center;
+	background: #00366b;
+  	vertical-align: middle;
+}
+
+#signUp .sign_up_title{
+	margin: 30px 0px 50px 0px;
+}
+
+#signUp h4 {
+	color: white;
+}
+
+#signUp .container .text-content h1 {
+	color: white;
+	font-size: 128px;
+}
+
+#signUp .primary_button_sign_up a {
+	display: inline-block;
+	background-color: #fff;
+	font-size: 13px;
+	padding: 12px 18px;
+	color: #121212;
+	font-weight: 500;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-decoration: none;
+	border-radius: 20px;
+	margin: 10px;
+	width: 50px;
+	width: 150px;
+}
+#signUp .primary_button_sign_up a:hover {
+	color: #0084ff;
+}
+
+#signUp .primary_button_download a {
+	display: inline-block;
+	background-color: rgb(255, 235, 16);
+	font-size: 13px;
+	padding: 12px 18px;
+	color: #121212;
+	font-weight: 500;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-decoration: none;
+	border-radius: 20px;
+	margin: 10px;
+	width: 150px;
+}
+
+#signUp .primary_button_download a:hover {
+	color: #0084ff;
+}
+
+#signUp .primary_button_download ul {
+	margin-top: 20px;
+}
+
+#signUp .primary_button_download ul li {
+	color: #fffba8;
+}
+
+#signUp .service-item {
+	padding: 50px;
+}
+
+#information .sub_title {
+	color: #00366b;
+	font-size: 32px;
+	text-align: center;
+	padding-bottom: 10px;
+	margin: 100px 0px 0px 0px;
+}
+
+#information .service-item {
+	padding: 0px 10px;
+	margin: 60px;
+}
+
+#information .service-item ul li {
+	line-height: 50px;
+	font-size: 18px;
 }
