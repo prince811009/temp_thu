@@ -1091,40 +1091,40 @@ footer .connect-us ul li a:hover {
 	text-align: center;
 }
 
-#goal .sqs-row {
+#goal .sqs-row, #information .sqs-row {
     width: auto !important;
 }
 
-#goal .sqs-col-4 {
+#goal .sqs-col-4, #information .sqs-col-4{
     width: 33.3333%;
 }
 
-#goal [class*=sqs-col] {
+#goal [class*=sqs-col], #information [class*=sqs-col] {
     float: left;
 }
 
-#goal .goal_wrap {
+#goal .goal_wrap,  #information .goal_wrap {
 	margin: 0px 10px;
 }
 
-#goal .goal_wrap .goal_dec p{
+#goal .goal_wrap .goal_dec p, #information .goal_wrap .goal_dec p {
 	font-size: 16px;
 	padding: 30px;
 	line-height: 25px;
 }
 
-#goal .row{
+#goal .row, #information .row {
 	padding-top: 50px 0;
 }
 
-#goal .seperator{
+#goal .seperator, #information .seperator {
 	height: 1px;
 	background:rgb(66, 131, 178);
 	border:none;
 	display: block;
 	margin: 0px 300px;
 }
-#goal .title{
+#goal .title, #information .title {
 	text-align: center;
 }
 
@@ -1142,28 +1142,28 @@ footer .connect-us ul li a:hover {
 	user-select: none;
 }
 	
-#goal .item-in {
+#goal .item-in, #information .item-in {
 	background: #fff;
 	padding: 40px 40px;
 	position: relative;
 }
 
-#goal .item-in p {
+#goal .item-in p, #information .item-in p {
 	background: #fff;
 	padding: 40px 40px 0px 40px;
 	position: relative;
 	text-align: center;
 }
 
-#goal .item-in img {
+#goal .item-in img, #information .item-in img {
 	margin: 10px;
 }
 
-#goal .item-in:hover:before {
+#goal .item-in:hover:before, #information .item-in:hover:before {
 	width: 100%;
 }
 	 
-#goal .item-in::before {
+#goal .item-in::before, #information .item-in::before {
 	content: "";
 	position: absolute;
 	bottom: 0px;
@@ -1378,7 +1378,8 @@ footer .connect-us ul li a:hover {
 	width: 150px;
 }
 #signUp .primary_button_sign_up a:hover {
-	color: #0084ff;
+	color: #ffffff;
+	background-color: #339cff;
 }
 
 #signUp .primary_button_download a {
@@ -1397,7 +1398,8 @@ footer .connect-us ul li a:hover {
 }
 
 #signUp .primary_button_download a:hover {
-	color: #0084ff;
+	color: #339cff;
+	background-color: #ffffff;
 }
 
 #signUp .primary_button_download ul {
@@ -1405,11 +1407,17 @@ footer .connect-us ul li a:hover {
 }
 
 #signUp .primary_button_download ul li {
-	color: #fffba8;
+	color: #ff1300;
 }
 
 #signUp .service-item {
 	padding: 50px;
+}
+
+#goal, #information {
+	margin: 0px 50px 50px 50px;
+	text-align: left;
+	padding: 0px 50px;
 }
 
 #information .sub_title {
@@ -1429,3 +1437,101 @@ footer .connect-us ul li a:hover {
 	line-height: 50px;
 	font-size: 18px;
 }
+
+#information .item {
+	position: relative;
+	margin: 10px 0px 30px 0px;
+	min-height: 1px;
+	float: left;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#schedule ul.main { 
+	list-style: none;
+	max-width: 75%;
+	margin: 20px auto;
+}
+
+#schedule h3 {padding: 0; margin: 0;}
+  
+#schedule .date {
+	width: 17%;
+	padding: 15% 1% 0 0 ;
+	float: left;
+}
+  
+#schedule .date h3 {
+	font-size: 1.5em;
+}
+  
+#schedule .date p {
+	font-size: .8em;
+}
+  
+#schedule .events {
+	float: left;
+	width: 80%;
+	border-left: 1px solid #ccc;
+	margin-top: 10%;
+	padding-top: 3%;
+}
+  
+#schedule .events-detail {
+	max-width: 550px;
+}
+  
+#schedule .events-detail li{
+	padding: 10px;
+	border-bottom: 1px dashed #ccc;
+	line-height: 22px;
+	transition: ease .4s all;
+}
+  
+#schedule .events-detail li:hover {
+	background: #e9e9e9;
+}
+  
+#schedule .event-time {
+	font-weight: 900;
+}
+  
+#schedule .events-detail li a {
+	text-decoration: none;
+	color: #444;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+  
+#schedule .event-location {
+	  font-size: .8em;
+	  color: tomato;
+	  margin-left: 70px;
+}
+
+  @media all and (max-width: 641px) {
+	#schedule .date {
+		width: 100%;
+		border-bottom: 1px solid #ccc;
+		margin-bottom: 10px;
+	}
+	
+	#schedule .events {
+	  border:none;
+	  width: 100%;
+	  margin-top: 0;
+	}
+	
+	#schedule .events-detail {
+	  padding: 0;
+	}
+	
+	#schedule li.date p {
+	  margin:0;
+	}
+  }
