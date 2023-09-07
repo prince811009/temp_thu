@@ -9084,6 +9084,10 @@ textarea.form-control-lg {
   padding: 5rem 2rem 0rem 2rem !important;
 }
 
+.content-space-t-committee {
+  padding: 2.5rem 2rem 0rem 2rem !important;
+}
+
 .content-space-t-3 {
   padding: 7.5rem 1.5rem 0rem 1.5rem !important;
 }
@@ -15029,7 +15033,7 @@ a {
 :focus,
 a:focus,
 button:focus {
-  outline-color: rgba(10, 191, 83, 0.5);
+  outline-color: rgba(10, 82, 191, 0.5);
 }
 
 @media (max-width: 767.98px) {
@@ -24357,3 +24361,91 @@ a:hover .text-inherit {
 	font-size: 18px;
   color: red;
 }
+
+#schedule ul .main { 
+	list-style: none;
+	max-width: 75%;
+	margin: 20px auto;
+}
+
+#schedule h3, #schedule h4 {
+  padding: 0; margin: 0;
+  color: #000;
+}
+  
+#schedule .date {
+	width: 17%;
+	padding: 15% 1% 0 0 ;
+	float: left;
+}
+  
+#schedule .date h3 {
+	font-size: 1.5em;
+}
+  
+#schedule .date p {
+	font-size: .8em;
+}
+  
+#schedule .events {
+	float: left;
+	width: 80%;
+	border-left: 1px solid #ccc;
+	margin-top: 10%;
+	padding-top: 3%;
+}
+  
+#schedule .events-detail {
+	max-width: 550px;
+}
+  
+#schedule .events-detail li{
+	padding: 10px;
+	border-bottom: 1px dashed #ccc;
+	line-height: 22px;
+	transition: ease .4s all;
+}
+  
+#schedule .events-detail li:hover {
+	background: #e9e9e9;
+}
+  
+#schedule .event-time {
+	font-weight: 900;
+}
+  
+#schedule .events-detail li a {
+	text-decoration: none;
+	color: #444;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+  
+#schedule .event-location {
+	  font-size: .8em;
+	  color: var(--bs-blue);
+	  margin-left: 20px;
+}
+
+  @media all and (max-width: 641px) {
+	#schedule .date {
+		width: 100%;
+		border-bottom: 1px solid #ccc;
+		margin-bottom: 10px;
+	}
+	
+	#schedule .events {
+	  border:none;
+	  width: 100%;
+	  margin-top: 0;
+	}
+	
+	#schedule .events-detail {
+	  padding: 0;
+	}
+	
+	#schedule li.date p {
+	  margin:0;
+	}
+  }
