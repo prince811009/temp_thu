@@ -24295,26 +24295,12 @@ a:hover .text-inherit {
   File for your custom SCSS style
 ------------------------------------*/
 
-#sign_up .sign_up_top{
-	width: 100%;
-  padding-top: 28vh;
-  padding-bottom: 20vh;
-  text-align: center;
-	background: #00366b;
-  vertical-align: middle;
-}
-
 #sign_up .sign_up_title{
 	margin: 30px 0px 50px 0px;
 }
 
 #sign_up h4 {
 	color: white;
-}
-
-#sign_up .sign_up_top .text-content h1 {
-	color: white;
-	font-size: 128px;
 }
 
 #sign_up .primary_button_sign_up a {
@@ -24359,9 +24345,15 @@ a:hover .text-inherit {
 
 #sign_up .primary_button_download p {
 	margin-top: 20px;
-  color: #ff1300;
+  color: red;
 }
 
 #sign_up .service-item {
 	padding: 50px;
+}
+
+#information .service-item ul li {
+	line-height: 50px;
+	font-size: 18px;
+  color: red;
 }
