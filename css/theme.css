@@ -639,6 +639,10 @@ progress {
   margin-left: auto;
 }
 
+.container_footer {
+  margin: 0rem 2rem 0rem 2rem;
+}
+
 @media (min-width: 576px) {
   .container-sm, .container {
     max-width: 540px;
@@ -8686,7 +8690,7 @@ textarea.form-control-lg {
 }
 
 .fs-3 {
-  font-size: 1rem !important;
+  font-size: 0.9rem !important;
 }
 
 .fs-4 {
@@ -9126,7 +9130,7 @@ textarea.form-control-lg {
 }
 
 .content-space-2 {
-  padding: 5rem 2rem 1rem 2rem !important;
+  padding: 5rem 2rem 5rem 2rem !important;
 }
 
 .content-space-3 {
@@ -20042,6 +20046,12 @@ input[type=number] {
   max-width: 3rem;
 }
 
+.navbar-brand-logo-bottom {
+  width: 100%;
+  min-width: 5rem;
+  max-width: 5rem;
+}
+
 .navbar-brand-collapsed,
 .navbar-brand-on-scroll {
   display: none;
@@ -23580,6 +23590,10 @@ input[type=number] {
   opacity: 0.7;
 }
 
+.link-dark-75 {
+  opacity: 0.75;
+}
+
 .link-light-75 {
   opacity: 0.75;
 }
@@ -24280,3 +24294,7 @@ a:hover .text-inherit {
 /*------------------------------------
   File for your custom SCSS style
 ------------------------------------*/
+
+#content .bg_img {
+	/* background-image: url(../img/banner_3_small.jpg); */
+}
