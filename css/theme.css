@@ -24354,7 +24354,7 @@ a:hover .text-inherit {
 
 #sign_up .primary_button_download p {
 	margin-top: 20px;
-  color: red;
+  color: white;
 }
 
 #sign_up .service-item {
@@ -24457,5 +24457,5 @@ a:hover .text-inherit {
 
 #content .position-relative .home_bg_color {
   background-color: #0000007d;
-  padding: 50px;
+  padding: 20px;
 }
