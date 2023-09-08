@@ -9133,6 +9133,10 @@ textarea.form-control-lg {
   padding: 3.5rem 2rem 3.5rem 2rem !important;
 }
 
+.content-space-organizer {
+  padding: 2rem !important;
+}
+
 .content-space-2 {
   padding: 5rem 2rem 5rem 2rem !important;
 }
@@ -24128,7 +24132,7 @@ a:hover .text-inherit {
   opacity: 1;
 }
 .swiper-step-pagination .swiper-step-pagination-title {
-  color: rgba(45, 55, 75, 0.9);
+  color: rgba(45, 55, 75, 0.7);
 }
 .swiper-step-pagination .swiper-slide-thumb-active .swiper-step-pagination-title {
   color: #2d374b;
