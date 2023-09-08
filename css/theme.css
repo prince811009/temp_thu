@@ -9085,7 +9085,7 @@ textarea.form-control-lg {
 }
 
 .content-space-t-committee {
-  padding: 2.5rem 2rem 0rem 2rem !important;
+  padding: 2.5rem 0rem 0rem 0rem !important;
 }
 
 .content-space-t-3 {
@@ -20054,6 +20054,7 @@ input[type=number] {
   width: 100%;
   min-width: 4rem;
   max-width: 4rem;
+  margin-bottom: 10px;
 }
 
 .navbar-brand-collapsed,
@@ -24127,7 +24128,7 @@ a:hover .text-inherit {
   opacity: 1;
 }
 .swiper-step-pagination .swiper-step-pagination-title {
-  color: rgba(45, 55, 75, 0.7);
+  color: rgba(45, 55, 75, 0.9);
 }
 .swiper-step-pagination .swiper-slide-thumb-active .swiper-step-pagination-title {
   color: #2d374b;
@@ -24449,3 +24450,8 @@ a:hover .text-inherit {
 	  margin:0;
 	}
   }
+
+#content .position-relative .home_bg_color {
+  background-color: #0000007d;
+  padding: 50px;
+}

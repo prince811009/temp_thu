@@ -230,7 +230,7 @@
     <div id="information" class="container content-space-2 content-space-lg-3">
       <div class="row mb-5">
         <div class="col-md-10 col-lg-8 offset-md-1 offset-lg-2">
-          <h1 class="fw-4 text-dark mb-10" style="text-align: center;">- 會議資訊 -</h1>
+          <h2 class="text-dark mb-5" style="text-align: center;">- 會議資訊 -</h2>
         </div>
 
         <div class="col-md-10 col-lg-8 offset-md-1 offset-lg-2">
@@ -400,9 +400,9 @@
         <!-- 交通資訊圖 -->
         <div class="">
           <div class="container content-space-t-committee">
-            <div class="row justify-content-lg-center">
-              <div class="col-lg-10">
-                <img class="img-fluid" style="padding: 0px 50px; margin-top: 50px;" src="./img/traffic_info.jpg" alt="Image Description">
+            <div class="row justify-content-lg-center text-center">
+              <div class="col-lg-10 mt-3">
+                <img class="img-fluid" src="./img/traffic_info.jpg" alt="Image Description">
               </div>
               <!-- End Col -->
             </div>
@@ -420,11 +420,11 @@
   </main>
   <!-- ========== END MAIN CONTENT ========== -->
 
-  <!-- ========== FOOTER ========== -->
-  <footer class="bg-dark">
+   <!-- ========== FOOTER ========== -->
+   <footer class="bg-dark">
     <div class="container">
       <div class="row align-items-center pt-8 pb-4">
-        <div class="col-md mb-5 mb-md-0">
+        <div class="col-md mb-0 mb-md-0">
         <!-- Default Logo -->
         <a class="navbar-brand" href="./index.html" aria-label="Unify">
           <img class="navbar-brand-logo-bottom" src="./img/logo_white-removebg-preview.png" alt="Home page">
@@ -461,7 +461,7 @@
           </div>
           <!-- End Col -->
 
-          <div class="col-6 col-sm-4 col-lg mb-7 mb-sm-0">
+          <div class="col-6 col-sm-4 col-lg mb-5 mb-sm-0">
             <span class="text-cap text-white">會議日期</span>
 
             <!-- List -->
@@ -472,11 +472,11 @@
           </div>
           <!-- End Col -->
 
-          <div class="col-6 col-sm-4 col-lg mb-7 mb-sm-0">
+          <div class="col-6 col-sm-4 col-lg mb-5 mb-sm-0">
             <span class="text-cap text-white">會議地點</span>
 
             <!-- List -->
-            <ul class="list-unstyled list-py-1 mb-5">
+            <ul class="list-unstyled list-py-1 mb-2">
               <li><a class="link link-light link-light-75" href="#">-東海大學-</br>台中市西屯區</br>台灣大道五段1727號</a></li>
             </ul>
             <!-- End List -->
@@ -532,6 +532,7 @@
   </footer>
   <!-- ========== END FOOTER ========== -->
 
+
   <!-- ========== SECONDARY CONTENTS ========== -->
   <!-- Go To -->
   <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;"
@@ -560,9 +561,10 @@
   <script src="./assets/vendor/hs-header/dist/hs-header.min.js"></script>
   <script src="./assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
   <script src="./assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- JS Unify -->
-  <script src="./assets/js/theme.min.js"></script>
+  <script src="./assets/js/theme.js"></script>
 
   <!-- JS Plugins Init. -->
   <script>
@@ -584,6 +586,27 @@
       // INITIALIZATION OF GO TO
       // =======================================================
       new HSGoTo('.js-go-to')
+
+
+      // INITIALIZATION OF SWIPER
+      // =======================================================
+      var swiper = new Swiper('.js-swiper-clients',{
+        slidesPerView: 2,
+        breakpoints: {
+          380: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 15,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 15,
+          },
+        },
+      });
     })()
   </script>
 </body>
