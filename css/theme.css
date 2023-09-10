@@ -24459,3 +24459,23 @@ a:hover .text-inherit {
   background-color: #0000007d;
   padding: 50px 20px;
 }
+
+@media (min-width: 400px) {
+  .youtube_size {
+    width: 300px;
+  }
+}
+
+@media (min-width: 768px) {
+  .youtube_size {
+    width: 580px;
+    height: 315px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .youtube_size {
+    width: 580px;
+    height: 315px;
+  }
+}
