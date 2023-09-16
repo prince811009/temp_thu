@@ -522,15 +522,12 @@ progress {
   /* font-size: calc(1.5rem + 3vw); */
   font-weight: 700;
   line-height: 1.2;
-}
-
-#content .display-4{
-  font-size: 32px;
+  font-size: 1.8rem;
 }
 
 @media (min-width: 1200px) {
   .display-4 {
-    font-size: 3.75rem;
+    font-size: 2.8rem;
   }
 }
 
@@ -553,6 +550,17 @@ progress {
 @media (min-width: 1200px) {
   .display-6 {
     font-size: 2.5rem;
+  }
+}
+
+.display-7 {
+  font-size: calc(0.9rem + 1.5vw);
+  font-weight: 700;
+  line-height: 1.2;
+}
+@media (min-width: 1200px) {
+  .display-7 {
+    font-size: 1.8rem;
   }
 }
 
@@ -8687,6 +8695,10 @@ textarea.form-control-lg {
 
 .fs-2 {
   font-size: calc(1.3rem + 0.6vw) !important;
+}
+
+.fs-2-1 {
+  font-size: calc(1.2rem + 0.6vw) !important;
 }
 
 .fs-3 {
