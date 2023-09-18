@@ -9153,6 +9153,11 @@ textarea.form-control-lg {
   padding: 5rem 2rem 5rem 2rem !important;
 }
 
+
+.content-space-2-news {
+  padding: 2rem 1rem 2rem 1rem !important;
+}
+
 .content-space-3 {
   padding-top: 7.5rem !important;
   padding-bottom: 7.5rem !important;
@@ -17117,6 +17122,16 @@ input[type=number] {
   transform: translateY(-50%);
   transition: 0.2s;
 }
+
+.read_more {
+  color: #35b2e4;
+}
+
+.read_more:hover {
+  color: #396792;
+}
+
+
 .card-link:hover::after, [href]:hover .card-link::after {
   right: 0.4375rem;
 }
